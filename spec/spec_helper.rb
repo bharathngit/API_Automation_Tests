@@ -1,5 +1,6 @@
 require "bundler/setup"
 require "start_wars"
+require "swapi"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
