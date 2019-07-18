@@ -27,4 +27,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/start_wars.
+Bug reports and pull requests are welcome on GitHub at https://github.com/bharathngit/shipt_swapi_tests.
