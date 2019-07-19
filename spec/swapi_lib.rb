@@ -39,6 +39,7 @@ module StarWarsMethods
       return true
     else
       puts "Character '#{char_name}' not found in the film '#{film_name}'"
+      return found
     end
   rescue StandardError => e
     puts e.message
