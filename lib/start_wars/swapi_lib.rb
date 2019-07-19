@@ -54,7 +54,7 @@ module StarWarsMethods
   end
 
   def verify_starship(ship_name)
-    $logger.info(__method__) {"verify_starship #{ship_name} ."}
+    $logger.info(__method__) {"Searching for #{ship_name} ."}
     # Get starship resource using swapi helper library method 'get_all'
     ship_resource = Swapi.get_starship "?search=#{ship_name}"
     # Parse the resource data into Ruby Hash using JSON
@@ -73,6 +73,8 @@ module StarWarsMethods
   end #verify_starship
 
   def verify_species(person_name, species_type)
+    $logger.info(__method__) {"started."}
+
     # Get starship resource using swapi helper library method 'get_all'
     people_resource = Swapi.get_person "?search=#{person_name}"
     # Parse the resource data into Ruby Hash using JSON
@@ -91,6 +93,8 @@ module StarWarsMethods
       species_name = species_json_hash["name"]
       if species_name == species_type
         $logger.info(__method__) {"#{person_name} belongs to #{species_type}!"}
+        $logger.info(__method__) {"ended."}
+
         return true
       else
         raise "Error!#{person_name} Doesnt belongs to #{species_type}!"
@@ -102,6 +106,8 @@ module StarWarsMethods
   end #verify_species
 
   def starships_response_contains(keys_array)
+    $logger.info(__method__) {"started."}
+
     # Get startships resource using swapi helper library method 'get_all'
     ships_resource = Swapi.get_all "starships"
     # Parse the resource data into Ruby Hash using JSON
@@ -111,10 +117,10 @@ module StarWarsMethods
     for ship_hash in starship_array
       for exp_key in keys_array
         if ship_hash.key?(exp_key)
-          $logger.info(__method__) {"#{exp_key} field exists!"}
+          $logger.info(__method__) {"#{exp_key}"}
           flag = true
         else
-          $logger.error(__method__) {"#{key} field doesnt exists!"}
+          $logger.error(__method__) {"#{key} - false"}
           flag = false
         end
       end
@@ -126,6 +132,8 @@ module StarWarsMethods
   end #starships_response_contains
 
   def verify_starship_count
+    $logger.info(__method__) {"started."}
+
     # Get startships resource using swapi helper library method 'get_all'
     ships_resource = Swapi.get_all "starships"
     # Parse the resource data into Ruby Hash using JSON
@@ -166,9 +174,12 @@ module StarWarsMethods
     # Compare final count value of 'counter' with initial count value 'ship_count'
     if(counter == ship_count)
       $logger.info(__method__) {"**********Total ship counts matched!***********"}
+      $logger.info(__method__) {"ended."}
       return true
     else
       $logger.error(__method__) {"**********Total ship counts DID NOT match!***********"}
+      $logger.info(__method__) {"ended."}
+
       return false
     end
     rescue StandardError => e
