@@ -140,3 +140,33 @@
 [2019-07-19 15:18:33 -0700] INFO: verify_starship_count No. of space ships:37
 [2019-07-19 15:18:33 -0700] INFO: verify_starship_count End of pagination.******************
 [2019-07-19 15:18:33 -0700] INFO: verify_starship_count **********Total ship counts matched!***********
+[2019-07-23 23:00:34 -0700] INFO:  Test 5.Assert that the /starships count returned is correct by paging through the results
+[2019-07-23 23:00:34 -0700] INFO: verify_mock_api started.
+[2019-07-23 23:01:13 -0700] INFO:  Test 5.Assert that the /starships count returned is correct by paging through the results
+[2019-07-23 23:01:13 -0700] INFO: verify_mock_api started.
+[2019-07-23 23:01:50 -0700] INFO:  Test 5.Assert that the /starships count returned is correct by paging through the results
+[2019-07-23 23:01:50 -0700] INFO: verify_mock_api started.
+[2019-07-23 23:02:36 -0700] INFO:  Test 5.Assert that the /starships count returned is correct by paging through the results
+[2019-07-23 23:02:36 -0700] INFO: verify_mock_api started.
+[2019-07-23 23:06:41 -0700] INFO:  Test 6. Start a mock API server using json-server and verify_mock_api
+[2019-07-23 23:06:41 -0700] INFO: verify_mock_api started.
+[2019-07-23 23:07:05 -0700] INFO:  Test 6. Start a mock API server using json-server and verify_mock_api
+[2019-07-23 23:07:05 -0700] INFO: verify_mock_api started.
+[2019-07-23 23:08:54 -0700] INFO:  Test 6. Start a mock API server using json-server and verify_mock_api
+[2019-07-23 23:08:54 -0700] INFO: verify_mock_api started.
+[2019-07-23 23:09:10 -0700] INFO:  Test 6. Start a mock API server using json-server and verify_mock_api
+[2019-07-23 23:09:10 -0700] INFO: verify_mock_api started.
+[2019-07-23 23:10:29 -0700] INFO:  Test 6. Start a mock API server using json-server and verify_mock_api
+[2019-07-23 23:10:29 -0700] INFO: verify_mock_api started.
+[2019-07-23 23:10:31 -0700] ERROR: verify_mock_api 404 Not Found
+[2019-07-23 23:10:31 -0700] ERROR: verify_mock_api The resource doesn't exist.
+[2019-07-23 23:10:46 -0700] INFO:  Test 6. Start a mock API server using json-server and verify_mock_api
+[2019-07-23 23:10:46 -0700] INFO: verify_mock_api started.
+[2019-07-23 23:10:48 -0700] ERROR: verify_mock_api 404 Not Found
+[2019-07-23 23:10:48 -0700] ERROR: verify_mock_api The resource doesn't exist.
+[2019-07-23 23:11:52 -0700] INFO:  Test 6. Start a mock API server using json-server and verify_mock_api
+[2019-07-23 23:11:52 -0700] INFO: verify_mock_api started.
+[2019-07-23 23:11:54 -0700] ERROR: verify_mock_api 404 Not Found
+[2019-07-23 23:11:54 -0700] ERROR: verify_mock_api The resource doesn't exist.
+[2019-07-23 23:12:59 -0700] INFO:  Test 6. Start a mock API server using json-server and verify_mock_api
+[2019-07-23 23:12:59 -0700] INFO: verify_mock_api started.

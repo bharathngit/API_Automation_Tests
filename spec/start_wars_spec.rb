@@ -34,4 +34,12 @@ RSpec.describe StartWars do
     $logger.info {"Test 5.Assert that the /starships count returned is correct by paging through the results"}
     expect(verify_starship_count).to eq(true)
   end
+
+  ##MOCKING API tests.
+
+  it "Start a mock API server using json-server and verify_mock_api" do
+    $logger.info {"Test 6. Start a mock API server using json-server and verify_mock_api"}
+    expect(verify_mock_api).to eq(true)
+  end
+
 end
